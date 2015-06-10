@@ -11,8 +11,9 @@ import android.widget.TextView;
 public class MainActivity extends ActionBarActivity {
 
     TextView num1,num2,ope,answer;
-    int ans,temp;
-    boolean point;
+    int n1,n2,temp;
+
+    int point;
 
 
     @Override
@@ -23,22 +24,24 @@ public class MainActivity extends ActionBarActivity {
         num2 = (TextView)findViewById(R.id.num2);
         ope = (TextView)findViewById(R.id.ope);
         answer = (TextView)findViewById(R.id.answer);
-        num1.setText("----");
-        num2.setText("----");
+        num1.setText(" ");
+        num2.setText(" ");
         ope.setText(" ");
         answer.setText("----");
         temp=0;
-        ans=0;
-        point = false;
+
+        point = 0;
     }
 
     public void bt0(View v){
-        if(point){
-            num2.setText("0");
+        temp=0;
+        if(point!=0){
+            n2=n2*10 + temp;
+            num2.setText(String.valueOf(n2));
         }else{
-            ans = 0;
-            num1.setText("0");
-            num2.setText("----");
+            n1 = n1*10+temp;
+            num1.setText(String.valueOf(n1));
+            num2.setText(" ");
             ope.setText(" ");
             answer.setText("----");
         }
@@ -46,13 +49,13 @@ public class MainActivity extends ActionBarActivity {
 
     public void bt1(View v){
         temp=1;
-        if(point){
-            ans+=temp;
-            num2.setText(String.valueOf(temp));
+        if(point!=0){
+            n2=n2*10 + temp;
+            num2.setText(String.valueOf(n2));
         }else{
-            ans = temp;
-            num1.setText(String.valueOf(temp));
-            num2.setText("----");
+            n1 = n1*10+temp;
+            num1.setText(String.valueOf(n1));
+            num2.setText(" ");
             ope.setText(" ");
             answer.setText("----");
         }
@@ -60,118 +63,153 @@ public class MainActivity extends ActionBarActivity {
 
     public void bt2(View v){
         temp=2;
-        if(point){
-            ans+=temp;
-            num2.setText(String.valueOf(temp));
+        if(point!=0){
+            n2=n2*10 + temp;
+            num2.setText(String.valueOf(n2));
         }else{
-            ans = temp;
-            num1.setText(String.valueOf(temp));
-            num2.setText("----");
+            n1 = n1*10+temp;
+            num1.setText(String.valueOf(n1));
+            num2.setText(" ");
             ope.setText(" ");
             answer.setText("----");
         }
     }
     public void bt3(View v){
         temp=3;
-        if(point){
-            ans+=temp;
-            num2.setText(String.valueOf(temp));
+        if(point!=0){
+            n2=n2*10 + temp;
+            num2.setText(String.valueOf(n2));
         }else{
-            ans = temp;
-            num1.setText(String.valueOf(temp));
-            num2.setText("----");
+            n1 = n1*10+temp;
+            num1.setText(String.valueOf(n1));
+            num2.setText(" ");
             ope.setText(" ");
             answer.setText("----");
         }
     }
     public void bt4(View v){
         temp=4;
-        if(point){
-            ans+=temp;
-            num2.setText(String.valueOf(temp));
+        if(point!=0){
+            n2=n2*10 + temp;
+            num2.setText(String.valueOf(n2));
         }else{
-            ans = temp;
-            num1.setText(String.valueOf(temp));
-            num2.setText("----");
+            n1 = n1*10+temp;
+            num1.setText(String.valueOf(n1));
+            num2.setText(" ");
             ope.setText(" ");
             answer.setText("----");
         }
     }
     public void bt5(View v){
         temp=5;
-        if(point){
-            ans+=temp;
-            num2.setText(String.valueOf(temp));
+        if(point!=0){
+            n2=n2*10 + temp;
+            num2.setText(String.valueOf(n2));
         }else{
-            ans = temp;
-            num1.setText(String.valueOf(temp));
-            num2.setText("----");
+            n1 = n1*10+temp;
+            num1.setText(String.valueOf(n1));
+            num2.setText(" ");
             ope.setText(" ");
             answer.setText("----");
         }
     }
     public void bt6(View v){
         temp=6;
-        if(point){
-            ans+=temp;
-            num2.setText(String.valueOf(temp));
+        if(point!=0){
+            n2=n2*10 + temp;
+            num2.setText(String.valueOf(n2));
         }else{
-            ans = temp;
-            num1.setText(String.valueOf(temp));
-            num2.setText("----");
+            n1 = n1*10+temp;
+            num1.setText(String.valueOf(n1));
+            num2.setText(" ");
             ope.setText(" ");
             answer.setText("----");
         }
     }
     public void bt7(View v){
         temp=7;
-        if(point){
-            ans+=temp;
-            num2.setText(String.valueOf(temp));
+        if(point!=0){
+            n2=n2*10 + temp;
+            num2.setText(String.valueOf(n2));
         }else{
-            ans = temp;
-            num1.setText(String.valueOf(temp));
-            num2.setText("----");
+            n1 = n1*10+temp;
+            num1.setText(String.valueOf(n1));
+            num2.setText(" ");
             ope.setText(" ");
             answer.setText("----");
         }
     }
     public void bt8(View v){
         temp=8;
-        if(point){
-            ans+=temp;
-            num2.setText(String.valueOf(temp));
+        if(point!=0){
+            n2=n2*10 + temp;
+            num2.setText(String.valueOf(n2));
         }else{
-            ans = temp;
-            num1.setText(String.valueOf(temp));
-            num2.setText("----");
+            n1 = n1*10+temp;
+            num1.setText(String.valueOf(n1));
+            num2.setText(" ");
             ope.setText(" ");
             answer.setText("----");
         }
     }
     public void bt9(View v){
         temp=9;
-        if(point){
-            ans+=temp;
-            num2.setText(String.valueOf(temp));
+        if(point!=0){
+            n2=n2*10 + temp;
+            num2.setText(String.valueOf(n2));
         }else{
-            ans = temp;
-            num1.setText(String.valueOf(temp));
-            num2.setText("----");
+            n1 = n1*10+temp;
+            num1.setText(String.valueOf(n1));
+            num2.setText(" ");
             ope.setText(" ");
             answer.setText("----");
         }
     }
 
     public void equal(View v){
-        answer.setText(String.valueOf(ans));
-        point = false;
-        ans = 0;
+        int ans;
+        switch (point) {
+            case 1:
+                ans = n1 + n2;
+                answer.setText(String.valueOf(ans));
+                break;
+            case 2:
+                ans = n1 - n2;
+                answer.setText(String.valueOf(ans));
+                break;
+            case 3:
+                ans = n1 * n2;
+                answer.setText(String.valueOf(ans));
+                break;
+            case 4:
+                double ans_d;
+                ans_d = (double)n1 / (double)n2;
+                answer.setText(String.valueOf(ans_d));
+                break;
+        }
+        point = 0;
+        n1 = 0;
+        n2 = 0;
     }
 
     public void plus(View v){
-        point = true;
+        point = 1;
         ope.setText("+");
+    }
+
+    public void minus(View v){
+        point = 2;
+        ope.setText("-");
+    }
+
+    public void mul(View v){
+        point = 3;
+        ope.setText("×");
+    }
+
+    public void dvd(View v){
+        point = 4;
+        ope.setText("/");
     }
 
     @Override
